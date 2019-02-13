@@ -1,0 +1,1925 @@
+p{
+    font-family: OpenSans-Condensed;
+}
+a{
+   font-family: OpenSans-Condensed; 
+    color: #000000;
+}
+.both{
+    clear: both;
+}
+.top-header{
+    width: 100%;
+    height: 200px;
+    background-color: #fff;   
+}
+.mid{
+    width: 1250px;
+    height:100%;
+    margin: 0 auto;
+}
+.logo{
+    width: 278px;
+    height: 146px;
+    float: left;
+    margin-top: 30px;
+    margin-left: 50px;
+}
+.logo img{
+    width: 278px;
+    height: 146px;
+}
+.right-panel{
+    width: 450px;
+    height: 100%;
+    float: right;
+}
+.top-info-panel{
+    float: left;
+    margin-right: 20px;
+    margin-top: 30px;
+    font: 300 18px OpenSans-Condensed;
+}
+.search{
+   margin-top: 30px;
+    margin-left: 20px;
+    
+    height: 25px;
+   
+}
+.input-text{
+    border-color: #000000;
+    padding-left: 7px;
+    width: 170px;
+     height: 20px;
+    margin:auto 0;
+
+}
+.input-span-btn{
+    width: 16px;
+    height: 16px; 
+    margin-left: -28px;
+    margin-top: 2px;
+    border: none; 
+   
+    
+    background: #fff url(../images/search19.png);   
+    background-repeat: no-repeat; 
+}
+.delivery{
+    width: 270px;
+    margin: 25px 0 20px 130px;
+    
+}
+.delivery > p{
+    font: 300 18px OpenSans-Condensed;
+    text-transform: uppercase;
+    text-align: right;
+}
+.cart{
+    height: 25px;
+  width:150px;
+    float: left;
+    margin-right: 30px;
+    margin-left: -20px;
+    position: relative;
+}
+.cart > a{
+    position: absolute;
+    bottom: -1px;
+    font: 300 18px OpenSans-Condensed;
+    margin-left: 10px;
+}
+.sign-in{
+     height: 25px;
+    width:220px; 
+    float: left;
+    position: relative;
+    z-index: 9999;
+}
+.sign-in > p{
+    display: inline-block;
+    position: absolute;
+    bottom: -1px;
+    margin-left: 10px;
+    font: 300 18px OpenSans-Condensed;
+    vertical-align: bottom;
+    color: #000000;
+}
+.bottom-info-panel{
+    margin-left: 70px;
+    z-index: 9999;
+}
+.bottom-header{
+    width: 100%;
+    height: 50px;
+    background-color: #090c02;
+    position: relative;
+}
+.main-menu{
+    width: 100%;
+    height: 25px;
+    margin: auto;
+    
+    
+}
+.main-menu > ul{
+    height: 100%;
+    margin-left: 75px;
+}
+.main-menu > ul > li{
+    float: left;
+    height: 50px;
+    font: 300 24px OpenSans-Condensed;   
+    color: #fff;
+    margin: 7px 30px;
+    position: relative;
+}
+.main-menu > ul > li > a{
+    font: 300 24px OpenSans-Condensed;   
+    color: #fff;
+}
+.main-menu  ul li:first-child{
+    margin-left: 90px;
+}
+.main-menu  ul li:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.main-menu  ul li img{
+    margin-left: 10px;
+    margin-bottom: 8px;
+}
+#menu-drone{
+    width: 600px;
+    height: 205px;
+    background-color: #ffffff;
+    border: 3px solid #000000;
+    border-top: none;
+    position: absolute;
+    left: 35%;
+    
+    display: none;
+    z-index: 999;
+    
+}
+#menu-drone ul{
+    width: 200px;
+    margin-left: 20px;
+    margin-top: 25px;
+    float: left;
+}
+#menu-drone img{
+    float: left;
+    width: 325px;
+    height: auto;
+    margin: 10px 0 0 25px;
+}
+#menu-drone ul h1{
+    font: 300 22px / 26px OpenSans-Bold;
+    color: black;
+     margin: 7px 30px;
+    margin-bottom: 25px;
+    width: 200px; 
+}
+#menu-drone ul li{
+    margin: 7px 30px;
+    width: 200px;    
+    float:none;
+    font: 300 20px / 26px OpenSans-Condensed;
+}
+#menu-drone ul li a{
+    font: 300 20px / 26px OpenSans-Condensed;
+    color: black;
+}
+#menu-drone ul li a:hover{
+    color: #17bebb;
+    padding-left: 15px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+.menu ul li:first-child{
+    margin-left: 30px;
+    margin-bottom: 25px;
+}
+.first-li-in-menu{
+    
+    margin-bottom: 55px;
+    font: 900 18px OpenSans-Bold;
+}
+
+/* Слфайдер */
+
+/**
+ * BxSlider v4.1.2 - Fully loaded, responsive content slider
+ * http://bxslider.com
+ *
+ * Written by: Steven Wanderski, 2014
+ * http://stevenwanderski.com
+ * (while drinking Belgian ales and listening to jazz)
+ *
+ * CEO and founder of bxCreative, LTD
+ * http://bxcreative.com
+ */
+
+
+/** RESET AND LAYOUT
+===================================*/
+
+.bx-wrapper {
+	position: relative;
+	margin: 0 auto 60px;
+	padding: 0;
+	*zoom: 1;
+}
+
+.bx-wrapper img {
+	max-width: 100%;
+	display: block;
+}
+
+/** THEME
+===================================*/
+
+.bx-wrapper .bx-viewport {
+	-moz-box-shadow: 0 0 5px #ccc;
+	-webkit-box-shadow: 0 0 5px #ccc;
+	box-shadow: 0 0 5px #ccc;
+	border:  5px solid #fff;
+	left: -5px;
+	background: #fff;
+	
+	/*fix other elements on the page moving (on Chrome)*/
+	-webkit-transform: translatez(0);
+	-moz-transform: translatez(0);
+    	-ms-transform: translatez(0);
+    	-o-transform: translatez(0);
+    	transform: translatez(0);
+}
+
+.bx-wrapper .bx-pager,
+.bx-wrapper .bx-controls-auto {
+	position: absolute;
+	bottom: -30px;
+	width: 100%;
+}
+
+/* LOADER */
+
+.bx-wrapper .bx-loading {
+	min-height: 50px;
+	background: url(/images/bx_loader.gif) center center no-repeat #fff;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 100;
+}
+
+/* PAGER */
+
+.bx-wrapper .bx-pager {
+	text-align: center;
+	font-size: .85em;
+	font-family: Arial;
+	font-weight: bold;
+	color: #666;
+	padding-top: 20px;
+}
+
+.bx-wrapper .bx-pager .bx-pager-item,
+.bx-wrapper .bx-controls-auto .bx-controls-auto-item {
+	display: inline-block;
+	*zoom: 1;
+	*display: inline;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a {
+	background: #666;
+	text-indent: -9999px;
+	display: block;
+	width: 10px;
+	height: 10px;
+	margin: 0 5px;
+	outline: 0;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a:hover,
+.bx-wrapper .bx-pager.bx-default-pager a.active {
+	background: #000;
+}
+
+/* DIRECTION CONTROLS (NEXT / PREV) */
+/*
+
+.bx-wrapper .bx-prev {
+	left: 10px;
+	background: url(images/controls.png) no-repeat 0 -32px;
+    z-index: 300;
+}
+
+.bx-wrapper .bx-next { 
+	right: 10px; 
+	background: url(images/controls.png) no-repeat -43px -32px; 
+    z-index: 300; 
+}
+
+.bx-wrapper .bx-prev:hover {
+	background-position: 0 0;
+}
+
+.bx-wrapper .bx-next:hover {
+	background-position: -43px 0;
+}
+
+.bx-wrapper .bx-controls-direction a {
+	position: absolute;
+	top: 50%;
+	margin-top: -16px;
+	outline: 0;
+	width: 32px;
+	height: 32px;
+	text-indent: -9999px;
+	z-index: 200;
+}
+
+.bx-wrapper .bx-controls-direction a.disabled {
+	display: none;
+}
+*/
+
+.bx-prev{
+    display: block;
+    position: absolute;
+    width: 65px;
+    height: 65px;
+    top: 50%;
+    left: 40px;
+    margin-top: -32px;
+    background: url(../images/chevron20.png);  
+    text-indent: -9999px;
+}
+.bx-next{
+    display: block;
+    position: absolute;
+    width: 65px;
+    height: 65px;
+    top: 50%;
+    right: 40px;
+    margin-top: -32px;
+    background: url(../images/chevron21.png); 
+    text-indent: -9999px;
+}
+
+/* AUTO CONTROLS (START / STOP) */
+
+.bx-wrapper .bx-controls-auto {
+	text-align: center;
+}
+
+.bx-wrapper .bx-controls-auto .bx-start {
+	display: block;
+	text-indent: -9999px;
+	width: 10px;
+	height: 11px;
+	outline: 0;
+	background: url(../images/controls.png) -86px -11px no-repeat;
+	margin: 0 3px;
+}
+
+.bx-wrapper .bx-controls-auto .bx-start:hover,
+.bx-wrapper .bx-controls-auto .bx-start.active {
+	background-position: -86px 0;
+}
+
+.bx-wrapper .bx-controls-auto .bx-stop {
+	display: block;
+	text-indent: -9999px;
+	width: 9px;
+	height: 11px;
+	outline: 0;
+	background: url(../images/controls.png) -86px -44px no-repeat;
+	margin: 0 3px;
+}
+
+.bx-wrapper .bx-controls-auto .bx-stop:hover,
+.bx-wrapper .bx-controls-auto .bx-stop.active {
+	background-position: -86px -33px;
+}
+
+/* PAGER WITH AUTO-CONTROLS HYBRID LAYOUT */
+
+.bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-pager {
+	text-align: left;
+	width: 80%;
+}
+
+.bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-controls-auto {
+	right: 0;
+	width: 35px;
+}
+
+/* IMAGE CAPTIONS */
+
+.bx-wrapper .bx-caption {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background: #666;
+	background: rgba(80, 80, 80, 0.75);
+	width: 100%;
+}
+
+.bx-wrapper .bx-caption span {
+	color: #fff;
+	font-family: Arial;
+	display: block;
+	font-size: .85em;
+	padding: 10px;
+}
+.bxslider li {
+    position: relative;
+}
+.slider-btn{
+    position: absolute;
+    top: 55%; 
+    right: 286px;
+    width: 225px;
+    height: 40px;
+    background-color: #000000;
+    
+}
+.slider-btn a{
+    display: block;
+    width: 150px;
+    height: 12px;
+    text-transform: uppercase;
+    font: 700 16px OpenSans-Bold;
+    color: #ffffff;
+    margin-left: 30px;
+    line-height: 40px;
+   
+}
+.slider-btn{
+    display: inline-block;
+    width: 225px;
+    height: 40px; 
+    margin-left: 10px;
+    background: #000 url(../images/sort6.png) no-repeat 200px 22px; 
+    font: 700 16px OpenSans-Bold;
+    text-transform: uppercase;
+    color: #ffffff;
+    padding-left: 45px;
+    padding-top: 17px;
+}
+.slider-btn:hover{
+    background: url(../images/sort7.png) no-repeat 200px 22px;
+    outline: 3px solid #000 ;
+    transition: 0.1s;
+    color:#000;
+    text-decoration: none;
+    
+}
+.slider-btn a:hover{
+    color:#000;
+    text-decoration: none;
+}
+.slider-btn span:hover{
+    background:none;
+    
+}
+
+
+
+
+
+
+
+/*Блок Новинки*/
+
+/*Шапка*/
+.label{
+    height: 50px;
+}
+.label .line{
+    display: block;
+    width: 525px;
+    height: 1px;
+    float: left;
+   background: url(../images/line-left.png); 
+    margin-top: 35px;
+}
+.label h1{
+    display: block;
+   width: 135px;
+    height: 34px;
+    float: left;
+    font: 300 48px OpenSans-Condensed;
+    margin: 0 30px;  
+}
+.label span:last-child{
+    float: right;
+}
+
+/*Блоки*/
+
+.product{
+    width: 275px;
+    height: 570px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+   
+}
+.product-img{
+    width: 275px;
+    height: 213px;
+    
+}
+.product-img img{
+    display: block;
+   width: 90%;
+    height: auto;
+    
+   
+    margin:auto;
+}
+.line-product{
+   
+    width: 225px;
+    height: 1px;
+    
+    margin: 0 auto;
+    margin-top: 10px;
+    background: #000; 
+}
+.product a{
+    display: inline-block;
+    width: 87%;
+    height: 78px;
+    overflow: hidden;
+    font: 300 30px OpenSans-Condensed;
+    color: #0e7c7b;
+    padding-left: 20px;
+}
+.stars{
+    width: 127px;
+    height: 21px;
+    background: url(../images/stars.png);
+    margin-top: 10px;
+    margin-left: 20px;
+    float: left;
+}
+.count-stars{
+    font: 400 24px OpenSans;
+    float: left;
+    margin-top: 2px;
+    margin-left: 10px;
+}
+.product p{
+    display: inline-block;
+    width: 87%;
+    height: 65px;
+    overflow: hidden;
+    font: 400 16px OpenSans;
+    padding: 0 20px 0 20px;
+    margin-top: 15px;
+}
+
+.quantity-in-stock{
+    width: 275px;
+    height: 30px;
+}
+.quantity-in-stock span{
+    display: block;
+    float: left;
+    margin-left: 20px;
+    margin-top: 15px;
+}
+.quantity-in-stock span:last-child{
+    margin-left: 7px;
+}
+.price{
+    width: 225px;
+    height: 60px;
+    margin: 0 auto;
+
+}
+/*
+p.old-price{
+   
+    font: 300 18px OpenSans-Condensed;
+    text-decoration: line-through;
+    margin-left: 30px;
+}
+*/
+p.new-price{
+    font: 300 30px OpenSans-Condensed;
+    text-align: center;
+
+}
+.product-button a{
+    display: inline-block;
+    width: 210px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    color: #ffffff;
+    font: 300 24px OpenSans-Condensed;
+    background-color: #090c02;
+    border: 3px solid #090c02;
+    padding: 2px 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    
+}
+.product-button a:hover{
+    background: #fff;
+    border: 3px solid #000000;
+    transition: 0.4s;
+    color: #000000;
+}
+.product-button{
+    width: 225px;
+    margin: 0 auto;
+    position: absolute;
+    margin-top: -25px;
+    margin-left: 25px;
+
+}
+.add-to-cart{
+    cursor: pointer;
+    
+}
+
+
+.product{
+    float: left;
+    margin: 0 17px;
+    margin-top: 50px;
+}
+
+/*Кнопка "Показать еще"*/
+.show-more a{
+    color: #ffffff;
+    font: 300 18px OpenSans-Bold;
+    background-color: #090c02;
+    border: 3px solid #090c02;
+    padding: 2px 85px;
+    text-transform: uppercase;
+    text-decoration: none;  
+}
+.show-more a:hover{
+    background: #fff;
+    border: 3px solid #000000;
+    transition: 0.4s;
+    color: #000000;
+}
+.show-more{
+    width: 325px;
+    height: 34px;
+    margin: 0 auto;
+    margin-top: 700px;
+    
+    position: absolute;
+    bottom: -100px;
+    left: 30%; right: 30%;
+    
+    
+}
+
+/* Блок товаров "Коптеры", "Популярное" */
+
+.drones, .popular, .new{
+    margin-top: 150px;
+    position: relative;
+}
+
+/* Баннер и кнопка */
+
+.banner{
+    width: 100%;
+/*    height: 870px;*/
+    margin-top: 200px;
+    position: relative;
+}
+.banner img{
+    width: 100%;
+    height: auto;
+    
+}
+
+.banner-btn{
+    position: absolute;
+    top: 82%; 
+    right: 15%;
+    width: 225px;
+    height: 40px;
+    background-color: #000000;
+    
+}
+.banner-btn a{
+    display: block;
+    width: 150px;
+    height: 20px;
+    line-height: 40px;
+    text-transform: uppercase;
+    font: 700 16px OpenSans-Bold;
+    color: #ffffff;
+    margin-left: 30px;
+    line-height: 40px;
+   
+}
+.banner-btn{
+    display: inline-block;
+    width: 225px;
+    height: 28px; 
+    margin-left: 10px;
+    background: #000 url(../images/sort6.png) no-repeat 200px 12px; 
+    font: 700 16px OpenSans-Bold;
+    text-transform: uppercase;
+    color: #ffffff;
+    padding-left: 45px;
+    padding-top: 7px;
+}
+.banner-btn:hover{
+    background: #fff url(../images/sort7.png) no-repeat 200px 12px;
+    outline: 3px solid #000 ;
+    transition: 0.1s;
+    color:#000;
+    text-decoration: none;
+    
+}
+.banner-btn a:hover{
+    color:#000;
+    text-decoration: none;
+}
+.banner-btn span:hover{
+    background:none;
+    
+}
+
+/* Слайдер "Популярное" */
+
+.bxslider, .bxslider2{
+    height: 1000px;
+    border: none;
+}
+
+
+
+/* Блок "Последние новости" */
+
+.last-news{
+    width: 100%;
+    height: 800px;
+}
+.last-news .label .line{
+    display: block;
+    width: 420px;
+    height: 1px;
+    float: left;
+   background: url(../images/line-left.png); 
+    margin-top: 35px;
+}
+.last-news .label h1{
+    display: block;
+   width: 350px;
+    height: 34px;
+    float: left;
+    font: 300 48px OpenSans-Condensed;
+    margin: 0 10px;
+    margin-left: 50px;
+}
+.last-news .label span:last-child{
+    float: right;
+}
+.announcement{
+    width: 600px;
+    height: 700px;
+    margin-top: 50px;
+    float: left;
+    
+}
+.announcement:last-child{
+    float: right;
+}
+
+.announcement-img{
+    width: 600px;
+    height: 400px;
+}
+.announcement-img img{
+    width: 100%;
+    height: 100%;
+}
+.announcement h1{
+    display: inline-block;
+    width: 500px;
+    height: 100px;
+    text-align: center;
+    text-transform: uppercase;
+    font: 300 36px OpenSans-Condensed;
+    overflow: hidden;
+    margin: 30px 0;
+    margin-bottom: 10px;
+    padding: 0 50px;
+}
+.announcement p{
+    display: inline-block;
+    width: 400px;
+    height: 50px;
+    text-align: center;
+    font:300 18px OpenSans-Condensed;
+    
+    padding: 0 100px;
+}
+
+.announcement-btn{
+    position: static;
+    display: inline-block;
+    width: 225px;
+    height: 28px; 
+    border: 3px solid #000;
+    margin-left: 10px;
+    background: #000 url(../images/sort6.png) no-repeat 225px 12px; 
+    font: 700 16px OpenSans-Bold;
+    text-transform: uppercase;
+    color: #ffffff;
+    padding-left: 45px;
+    padding-top: 7px;
+    margin: 20px 165px 0 165px;
+}
+.announcement-btn:hover{
+    background: #fff url(../images/sort7.png) no-repeat 225px 12px;
+    
+    transition: 0.4s;
+    color:#000;
+    text-decoration: none;
+    
+}
+/* Футер*/
+
+/* Блок "Наши партнеры" */
+
+.our-partners{
+    width: 100%;
+    height: 300px;
+    background-color: #cccccc;
+    
+}
+.our-partners h1{
+    font: 700 24px OpenSans-Bold;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    margin: 40px 0 10px 0;
+    text-transform: uppercase;
+}
+.our-partners span{
+    background: url(../images/long-line.png); 
+    display: inline-block;
+    width: 1250px;
+    height: 1px;
+}
+.partner{
+    width: 200px;
+    height: 85px;
+    float: left;
+    line-height: 85px;
+    text-align: center;
+    margin: 30px 4px;
+}
+.partner img{
+    width: 75%;
+    
+    vertical-align: middle;
+}
+
+/* Сам футер*/
+
+
+.main-footer{
+    background-color: #141414;
+    width: 100%;
+    height: 600px;
+    
+}
+.main-footer ul{
+    width: 190px;
+    height: 250px;
+    padding-top: 35px;
+    float: left;
+    margin: 0 55px 30px 55px;
+}
+.main-footer ul li{
+    color: #ffffff;
+}
+.main-footer ul li:first-child{
+    font: 700 20px OpenSans-Bold;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+
+    
+}
+.main-footer ul li a{
+    color: #ffffff;
+    font: 300 20px / 30px OpenSans-Condensed;
+    
+    
+}
+.main-footer ul li a:hover{
+    color: #5b9b9a;
+    transition: 0.1s;
+}
+
+/* Подписка на рассылку*/
+
+.subscribe-form{
+    width: 350px;
+    height: 170px;
+    margin-left: 55px;
+}
+.subscribe-form h1{
+    font: 700 20px OpenSans-Bold;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+    color: #fff;
+}
+.subscribe-form p{
+    display: inline-block;
+    width: 300px;
+    height: 45px;
+    color: #ffffff;
+    font: 300 16px / 24px OpenSans-Condensed;
+    margin: 10px 0 30px 0;
+}
+
+.subscribe-text{
+    width: 200px;
+    height: 28px;
+    padding-left: 10px;
+    background: #141414;
+    border: 1px solid rgba(204, 204, 204, 0.24);
+    font:300 18px OpenSans-Condensed;
+}
+
+.subscribe-btn{
+    width: 100px;
+    height: 32px;
+    font: 300 16px OpenSans-Condensed;
+    background-color: rgba(255, 255, 255, 0.11);
+    border: none;
+    color: #ffffff;
+}
+
+.main-footer span{
+    background: url(../images/footer-line.png);  
+    display: inline-block;
+    width: 1250px;
+    height: 1px;
+    margin-top: 220px;
+}
+
+.copyright{
+    color: #ffffff;
+    font: 300 16px / 30px OpenSans-Condensed;
+    margin-left: 50px;
+    margin-top: 15px;
+}
+
+
+/* СТРАНИЦА "КАТЕГОРИИ" ЗДЕСЬ ПОИСК ПО ПАРАМЕТРАМ, ВЫВОД КАТЕГОРИЙ, БРЕНДОВ, СОРТИРОВАТЬ ПО, ЦЕНА */
+
+/* ПОИСК ПО ПАРАМЕТРАМ */
+
+.options span{
+    display: inline-block;
+    width: 1250px;
+    height: 1px;
+    background: #000000;
+    margin-top: 50px;
+    
+}
+.block-category{
+    width: 250px;
+    margin-top: 25px;
+    float: left;
+    margin-left: 25px;
+    
+}
+.block-category > p{
+    font: 700 24px OpenSans-Bold;
+    margin-bottom: 15px;
+}
+#accordion{
+    width: 250px;
+    
+}
+#accordion h3{
+    display: inline-block;
+    width: 250px;
+    border-top: none;
+    font: 300 24px / 36px OpenSans-Condensed;
+}
+#accordion div{
+    width: 100%;
+    border-top: none;
+}
+#accordion span{
+    display: none;
+}
+#accordion div > ul > li >a{
+    font: 300 20px / 36px OpenSans-Condensed;
+    margin-left: 15px;
+    color: #000000;
+} 
+
+/* Сортировка */
+
+.block-sorting{
+    width: 250px;
+    float: left;
+    margin-top: 25px;
+}
+.block-sorting > p{
+    display: inline-block;
+    font: 700 24px OpenSans-Bold;
+    margin-bottom: 20px;
+}
+.block-sorting li{
+    display: inline-block;
+    width: 250px;
+    height: 35px;
+    color: #000000;
+    font: 300 20px / 36px OpenSans-Condensed;
+}
+.select-sort{
+    border: 1px solid #000;
+    padding-left: 10px;
+    background: url(../images/caret-sort.png) 230px 15px no-repeat;  
+    
+}
+.sorting-list{
+    width: 260px;
+    margin-left: -11px;
+    border: 1px solid #000;
+    border-top: none;
+    display: none;
+}
+.sorting-list li{
+    margin: 5px 0 5px 10px;
+}
+.all{
+    margin-top: 0;
+    margin-bottom: 150px;
+    position: relative;
+}
+
+/*  Страница Просмотра товара */
+
+.view-content{
+    width: 100%;
+    
+   
+    margin-top: 75px;
+    margin-bottom: 100px;
+}
+.clear-footer{
+    width: 100%;
+    height: 100px;
+}
+
+/*   Изображение*/
+
+.content-imgs{
+    width: 600px;
+    height: 400px;
+    float: left;
+}
+.content-imgs img{
+    width: 100%;
+    height: auto;
+}
+
+/*  Сам контент*/
+
+.main-content{
+    width: 600px;
+    height: auto;
+    float: left;
+    margin-left: 50px;
+}
+.main-content h1{
+    font: 300 36px OpenSans-Condensed;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+.main-content > p{
+    display: inline-block;
+    width: 100%;
+    margin-top: 15px;
+    font: 400 16px/26px OpenSans;
+}
+
+.main-content > .quantity-in-stock > span:first-child{
+    margin-left: 0;
+}
+.price-content{
+    margin-top: 25px;
+    width: 100%;
+
+    
+}
+.price-content span:first-child{
+    font: 400 24px OpenSans;
+    
+    
+}
+.price-content span{
+    display: inline-block;
+    font: 400 30px OpenSans;
+    
+}
+
+/*Кнопка Добавить в Корзину*/
+
+.add-to-cart{
+    width: 300px;
+    height: 34px;
+    background-color: #141414;
+    margin-top: 25px;
+}
+.add-to-cart a{
+    display: inline-block;
+    width: 100%;
+    color: #ffffff;
+    font: 700 16px OpenSans-Bold;
+    line-height: 40px;
+    background-color: #141414;
+    border: 3px solid #141414;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    
+}
+.add-to-cart a:hover{
+    background-color: #fff;
+    color: #000;
+    transition: 0.2s;
+}
+
+/*    Описание и характеристики и отзывы */
+
+
+.features-description{
+    width: 100%;
+    float: left;
+    margin-top: 100px;
+    
+}
+
+
+.tabs{
+    width: 65%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    
+}
+.tabs li{
+ display: inline-block;  
+    margin: 0 5px 10px 5px;
+}
+
+.tabs a{
+    display: inline-block;
+    width: 244px;
+    height: 24px;
+    border: 3px solid #000000;
+    color: #000000;
+    font: 700 18px OpenSans-Bold;
+    text-align: center;
+    text-decoration: none;
+}
+.tabs a:hover{
+    color: #ffffff;
+    background: #000000;
+}
+.tabs li.active{
+    color: #ffffff;
+    background: #000000;
+}
+.tabs li.active a{
+    color: #ffffff;
+}
+
+/*    ФОРМА РЕГИСТРАЦИИ 
+
+
+*/
+
+
+.h1-title{
+    font:  700 30px OpenSans-Condensed;
+    border-bottom: 1px solid #000;
+    padding-bottom: 15px;
+    margin-top: 50px;
+    padding-left: 100px;
+    
+}
+#block-form-registration{
+    height: 500px;
+    margin-left: 100px;
+}
+#form-registration{
+    margin-top: 25px;
+}
+#form-registration li{
+    margin-top: 10px;
+}
+#form-registration > li > input{
+    width: 300px;
+    height: 30px;
+    font: 400 18px OpenSans;
+    
+    padding-left: 5px;
+    color: #000;
+}
+#form-registration > li > label{
+    display: inline-block;
+    width: 270px;
+    height: 30px;
+    color: #000;
+    font: 400 22px OpenSans-Condensed;
+    
+}
+    
+.zvezda{
+    color: red;
+}    
+#gen_pass{
+    font: 400 18px OpenSans;
+    color: #000;
+    text-decoration: underline;
+    cursor: pointer;
+    margin-left: 10px;
+}    
+#gen_pass:hover{
+    text-decoration: none;
+}   
+#form-registration > li > input#reg_login,#form-registration > li > input#reg_pass{
+    width: 200px;
+}
+#block-captcha{
+    width: 600px;
+    height: 40px;
+       
+}
+#block-captcha img{
+    margin-top: 10px;
+    margin-right: 10px;
+}
+#block-captcha label{
+    display: inline-block;
+    width: 270px;
+    height: 30px;
+    color: #000;
+    font: 400 22px OpenSans-Condensed;
+}
+#block-captcha > input#reg_captcha{
+    width: 100px;
+    height: 25px;
+    font: 400 18px OpenSans;
+    padding-left: 5px;
+    
+}
+#reloadcaptcha{
+    margin-left: 305px;
+    margin-top: 10px;
+    font:  400 14px OpenSans;
+    color: #000;
+    cursor: pointer;
+    text-decoration: underline;
+}
+#reloadcaptcha:hover{
+    text-decoration: none;
+}
+#form_submit{
+    margin-right: 250px;
+    width: 200px;
+    height: 40px;
+    border: 3px solid #000;
+    background: #000;
+    color: #fff;
+    font: 700 16px OpenSans-Bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    
+}
+#form_submit:hover{
+    background: #fff;
+    color: #000;
+    transition: 0.2s;
+}
+
+/*       АВТОРИЗАЦИЯ  */
+.block-top-auth{
+    border: 3px solid #000;
+    background: #fff;
+    width: 250px;
+    height: auto;
+    position: absolute;
+    margin-top: 20px;
+    margin-left: -50px;
+    z-index: 9999;
+    display: none;
+}
+.corner{
+    position: absolute;
+    border: 10px solid transparent;
+    border-bottom: 10px solid #000;
+    top: -23px;
+    left: 75px;
+}
+.input-email-pass h3{
+    font: 700 16px OpenSans-Bold;
+    padding: 10px;
+}
+#message-auth{
+    font: 700 14px OpenSans-Bold;
+    padding: 10px;
+    padding-left: 30px;
+    background: #ffcece;
+    color: red;
+    display: none;
+}
+.input-email-pass > li{
+    margin-top: 7px;
+}
+.input-email-pass  input#auth-login{
+    width: 180px;
+    height: 25px;
+    font: 15px OpenSans;
+    border: 1px solid #000;
+    padding-left: 5px;
+}
+.input-email-pass  input#auth-pass{
+    width: 150px;
+    height: 25px;
+    font: 15px OpenSans;
+    border: 1px solid #000;
+    padding-left: 5px;
+    padding-right: 30px;
+}
+.pass-show{
+    background: url(../images/open_eye2.png) no-repeat;
+    width: 18px;
+    height: 10px;
+
+}
+.pass-hide{
+    background: url(../images/close_eye2.png) no-repeat;
+    width: 20px;
+    height: 10px;
+}
+.input-email-pass span{
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    margin-top: 10px;
+    position: absolute;
+    margin-left: -28px;
+    
+}
+.list-auth{
+    margin-top: 12px;
+}
+.list-auth li{
+    margin-top: 8px;
+    margin-left: 20px;
+    font:  14px OpenSans;
+}
+.list-auth a{
+    color: #000;
+    text-decoration: none;
+    margin-left: 5px;
+    font: 14px OpenSans;
+    border-bottom: 1px dashed black;
+}
+.list-auth a:hover{
+    border-bottom: none;
+    
+}
+#button-auth a{
+    display: inline-block;
+    margin: 20px 0 15px 110px;
+    width: 100px;
+    height: 20px;
+    border: 3px solid #000;
+    background: #000;
+    color: #fff;
+    font: 700 14px OpenSans-Bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    
+    
+}
+  
+    
+
+#button-auth a:hover{
+    background: #fff;
+    color: #000;
+    transition: 0.2s;
+}
+#auth-loading{
+    margin: 15px 55px 15px 0;
+    display: none;
+}
+
+
+#auth-user-info-img{
+     width: 40px;
+    height: auto;    
+}
+#auth-user-info-p{
+    margin-left: 5px;
+}
+
+
+/*    СООБЩЕНИЕ ПРИ ОШИБКЕ РЕГИСТРАЦИИ*/
+.error{
+    font: 14px OpenSans;
+    color: #b20000;
+    padding-left: 5px;
+    
+}
+.reg_message_good{
+    font: 20px OpenSans-Bold;
+    color: #000;
+    background: #72e3db;
+    padding-left: 15px;
+}
+.reg_message_error{
+    font: 20px OpenSans-Bold;
+    color: #000;
+    background: #fdafaf;
+    padding-left: 15px;
+}
+
+
+/*    КОРЗИНА ТОВАРОВ  ||| КОЗИНА ТОВАРОВ ||| КОРЗИНА ТОВАРОВ*/
+
+#block-step{
+    height: 100px;
+    border-bottom: 1px solid #000;
+    margin-top: 50px;
+    
+}
+#block-step > p{
+    font: 24px OpenSans-Condensed;
+    color: black;
+    margin-top: 20px;
+    margin-left: 55px;
+    position: absolute;
+}
+#block-step > a{
+/*    position: absolute;*/
+    display: inline-block;
+    float: right;
+    border: 3px solid #000;
+    font: 14px OpenSans-Bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 5px 15px 5px 15px;
+    margin-top: 10px;
+    margin-right: 50px;
+    background-color: white;
+    color: black;
+}
+#block-step > a:hover{
+    background-color: black;
+    color: white;
+    transition: 0.2s;
+}
+#name-step{
+    height: 30px;
+}
+#name-step  ul{
+    margin-left: 35px;
+}
+#name-step li{
+    float: left;
+    margin-left: 15px;
+    margin-top: 10px;
+}
+
+#name-step span{
+    line-height: 32px;
+}
+
+#name-step a{
+    font: 24px OpenSans-Condensed;
+    color: black;
+    text-decoration: none;
+}
+#name-step a.active{
+    color: #0e7c7b; 
+}
+
+#header-list-cart{
+    height: 50px;
+    border-bottom: 1px solid #000;
+    
+}
+#header-list-cart > div{
+    float: left;
+    text-align: center;
+    font: 16px OpenSans;
+    color: black;
+    margin-left: 45px;
+    margin-top: 15px;
+}
+#head1{width: 250px;}
+div#head2{width: 490px; text-align: left;}
+#head3{width: 55px;}
+#head4{width: 140px;}
+.block-list-cart{
+    width: 100%;
+    height: 200px;
+}
+.block-list-cart > div{
+    float: left;
+    margin-left: 45px;
+    
+}
+.img-cart{
+    width: 250px;
+    height: 200px;
+
+}
+.img-cart > p > img{
+    width: 250px;
+    height: 200px;
+
+}
+.title-cart{
+    width: 500px;
+    height: 200px;
+}
+.count-cart{
+    width: 55px;
+    height: 200px;
+}
+.price-product{
+    width: 120px;
+    height: 200px;
+}
+.delete-cart{
+    height: 200px;
+}
+.delete-cart img{
+    height: 40px;
+    width: auto;
+}
+.title-cart > p{
+    margin-top: 15px;
+}
+.title-cart > p > a{
+    font: 24px OpenSans-Condensed;
+    text-decoration: none;
+    color: #0e7c7b; 
+}
+.title-cart > p > a:hover{
+    text-decoration: underline;
+}
+.cart-mini-features{
+    font: 16px OpenSans;
+    color: black;
+    line-height: 24px;
+}
+.input-count-style{
+    margin-top: 45px;
+}
+.input-count-style input{
+    text-align: center;
+    border: 1px solid #808080;
+    width: 45px;
+    height: 20px;
+}
+.count-minus{
+    cursor: pointer;
+    font: 26px OpenSans;
+    margin: 2px;
+    margin-left: 16px;
+}
+.count-plus{
+    cursor: pointer;
+    font: 26px OpenSans;
+    margin: 2px;
+    margin-left: 15px;
+}
+.price-product p{
+    margin-left: 15px;
+    
+    font: 26px OpenSans-Condensed;
+}
+.price-product h5{
+    margin-left: 15px;
+    margin-top: 65px;
+    font: 18px OpenSans-Condensed;
+}
+.delete-cart img{
+    margin-top: 80px;
+}
+#bottom-cart-line{
+    width: 100%;
+    border-bottom: 1px solid #c4c4c4;
+    margin-left: 0;
+}
+.itog-price{
+    font: 20px OpenSans;
+    margin-right: 50px;
+    margin-top: 25px;
+}
+.itog-price strong{
+    font: 20px OpenSans-Bold;
+}
+.button-next{
+    margin-top: 30px;
+    margin-right: 50px;
+}
+.button-next > a{
+    border: 3px solid black;
+    font: 15px OpenSans-Bold;
+    color: white;
+    background-color: black;
+    padding: 5px 40px 5px 40px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.button-next > a:hover{
+    color: black;
+    background-color: white;
+    transition: 0.2s;
+    
+}
+#clear-cart{
+    font: 22px OpenSans;
+    margin-top: 50px;
+}
+#info-radio{
+    margin-left: 75px;
+}
+#info-radio > li > input{
+    margin-top: 7px;
+    margin-right: 7px;
+}
+#info-radio > li{
+    font: 15px OpenSans;
+}
+#info-order{
+    margin-top: 25px;
+    margin-left: 50px;
+}
+#info-order > li{
+    margin-top: 20px;
+}
+#info-order > li > input{
+    height: 30px;
+    width: 345px;
+    font: 17px OpenSans;
+    margin-left: 120px;
+    padding-left: 5px;
+}
+#info-order > li > input:focus, #info-order > li > textarea:focus{
+    border: 1px solid #c4e1eb;
+}
+#info-order > li > textarea{
+    height: 110px;
+    width: 350px;
+    margin-left: 120px;
+}
+#info-order > li > label{
+    font: 14px OpenSans;
+    color: black;
+    position: absolute;
+    margin-left: 15px;
+
+}
+#info-order > li > label.order_label_style{
+    margin-top: 0px;
+}
+#info-order > li > span{
+    font: italic 13px sans-serif;
+    color: #a7a7a7;
+    margin-left: 15px;
+    margin-top: 5px;
+    position: absolute;
+}
+#info-order > li > span.order_label_style{
+    margin-top: 7px;
+}
+.title-h3{
+    font: 17px OpenSans-Bold;
+    margin-top: 15px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+}
+#confirm-button-next{
+    border: 3px solid black;
+    font: 17px OpenSans-Bold;
+    color: white;
+    background-color: black;
+    padding: 5px 40px 5px 40px;
+    text-transform: uppercase;
+    margin-right: 50px;
+    margin-top: 25px;
+}
+#confirm-button-next:hover{
+    color: black;
+    background-color: white;
+    transition: 0.2s;
+}
+#list-info{
+    width: 900px;
+    height: 250px;
+    padding-top: 10px;
+    margin-left: 50px;
+    
+}
+#list-info > li{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font: 18px OpenSans;
+    padding-left: 15px;
+}
+#list-info > li > strong{
+    font: 18px OpenSans-Bold;
+    margin-right: 15px;
+    display: inline-block;
+    width: 175px;
+}
+.completion-title{
+    font: 24px OpenSans-Bold;
+    margin-left: 60px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+
+
+#itog-price-cart {
+    display: inline-block;
+    width: 25px;
+    background-color:#cccccc;
+    border-radius: 100%;
+    text-align: center;
+}
+
+#link-send-review{
+    margin-bottom: 75px;
+}
+#link-send-review a{
+    text-decoration: none;
+    border: 3px solid black;
+    font: 14px OpenSans-Bold;
+    color: white;
+    background-color: black;
+    padding: 5px 40px 5px 40px;
+    text-transform: uppercase;
+    margin-right: 50px;
+
+    margin-top: 25px;
+    margin-bottom: 50px;
+}
+#link-send-review a:hover{
+ color: black;
+    background-color: white;
+    transition: 0.2s;
+}
+
+
+/* ОТЗЫВЫ*/
+
+.block-reviews{
+    border-bottom: 1px solid #c4c4c4;
+    margin-top: 25px;
+    padding-bottom: 25px;
+    
+}
+.block-reviews img{
+    float: left;
+    width: 50px;
+    height: auto;
+    margin-left: 25px;
+    margin-top: 25px;
+    margin-right: 25px;
+}
+.author-date{
+    font: 16px OpenSans-Bold;
+    margin-left: 55px;
+    color: black;
+    
+}
+.textrev{
+    margin-left: 75px;
+    margin-right: 100px;
+    margin-top: 25px;
+    font: 14px/24px OpenSans;
+    color: black;
+    min-height: 50px;
+    
+}
+.text-comment{
+    font: 14px OpenSans;
+    color: black;
+    margin: 45px 100px 0 75px;
+    min-height: 50px;
+}
+#send-review{
+    display: none;
+    width: 500px;
+    height: 500px;
+    background-color: #e5e5e5;
+}
+#title-review{
+    font: 14px OpenSans;
+    padding: 15px 50px 0 0;
+}
+#send-review input{
+    width: 234px;
+    height: 25px;
+    margin-right: 50px;
+    margin-top: 15px;
+    border: 1px solid #dbdbdb;
+}
+#send-review textarea{
+     width: 230px;
+    height: 50px;
+    margin-right: 50px;
+    border: 1px solid #dbdbdb;
+}
+#label-name{
+    font: 14px OpenSans;
+    margin-right: 10px;
+}
+#label-good{
+    font: 14px OpenSans;
+    position: absolute;
+    margin-left: -100px;
+}
+#label-bad{
+    font: 14px OpenSans;
+    position: absolute;
+    margin-left: -93px;
+}
+#label-comment{
+    font: 14px OpenSans;
+    position: absolute;
+    margin-left: -106px;
+}
+#reload-img{
+    display: none;
+    margin-top: 35px;
+    margin-left: 295px;
+}
+#button-send-review{
+    cursor: pointer;
+    width: 65px;
+    margin-top: 25px;
+    margin-left: 230px;
+    padding: 3px 15px 3px 15px;
+    background: #ccc;
+    border: 1px solid black;
+
+
+    color: black;
+    font: 12px OpenSans;
+}
+#button-send-review:active{
+    background: #a3a3a3;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

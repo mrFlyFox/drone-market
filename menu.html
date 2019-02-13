@@ -1,0 +1,77 @@
+<div class="bottom-header">
+            <div class="mid">
+             <div class="main-menu">
+              <ul>
+                  <li>Новинки<img src="images/caret5.png" alt="">
+                  <div class="menu">
+                        <div class="mid">
+                            <ul>
+                                <li ><a href="" class="first-li-in-menu">Квадрокоптеры</a></li>
+                                <li><a href="">Dji</a></li>
+                                <li><a href="">SYMA</a></li>
+                                <li><a href="">Cheerson</a></li>
+                                <li><a href="">Tarot</a></li>
+                            </ul>
+                             <ul>
+                                <li ><a href="" class="first-li-in-menu">Октокоптеры</a></li>
+                                <li><a href="">Dji</a></li>
+                                <li><a href="">SYMA</a></li>
+                                <li><a href="">Cheerson</a></li>
+                                <li><a href="">Tarot</a></li>
+                            </ul>
+                             <ul>
+                                <li ><a href="" class="first-li-in-menu">Гексакоптеры</a></li>
+                                <li><a href="">Dji</a></li>
+                                <li><a href="">SYMA</a></li>
+                                <li><a href="">Cheerson</a></li>
+                                <li><a href="">Tarot</a></li>
+                            </ul>
+                        </div>
+                    </div> </li> 
+                  <li>Dji<img src="images/caret5.png" alt=""></li>
+                  <li>Коптеры<img src="images/caret5.png" alt="">
+                    <div class="menu">
+                        <div class="mid">
+                            <ul>
+                               <li></li>
+                                <?php
+                    $result = mysql_query("SELECT * FROM category WHERE type='drone'", $link);
+                    
+                        if (mysql_num_rows($result) >0)
+                        {
+                            $row = mysql_fetch_array($result);
+                            do
+                            {
+                                echo '
+                                <li><a href="view_cat.php?cat='.strtolower($row["brand"]).'&type='.$row["type"].'">'.$row["brand"].'</a></li>
+                                ';
+                            }
+                            while ($row = mysql_fetch_array($result));
+                        }
+                        
+                    ?>  
+                            </ul>
+                             <ul>
+                                <li ><a href="" class="first-li-in-menu">Октокоптеры</a></li>
+                                <li><a href="">Dji</a></li>
+                                <li><a href="">SYMA</a></li>
+                                <li><a href="">Cheerson</a></li>
+                                <li><a href="">Tarot</a></li>
+                            </ul>
+                             <ul>
+                                <li ><a href="" class="first-li-in-menu">Гексакоптеры</a></li>
+                                <li><a href="">Dji</a></li>
+                                <li><a href="">SYMA</a></li>
+                                <li><a href="">Cheerson</a></li>
+                                <li><a href="">Tarot</a></li>
+                            </ul>
+                        </div>
+                    </div> 
+                  </li>
+                  <li>Комплектующие<img src="images/caret5.png" alt=""></li>
+                  <li>Аксесуары<img src="images/caret5.png" alt=""></li>
+              </ul>  
+              </div>
+            </div>
+            
+        </div>
