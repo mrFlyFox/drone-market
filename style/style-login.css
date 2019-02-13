@@ -1,0 +1,48 @@
+body{
+    background-color: #dedede;
+}
+#block-pass-login{
+    width: 300px;
+    height: 200px;
+    margin: 100px auto;
+    background-color: #fff;
+    border: 1px solid #c3c3c3;
+    box-shadow:  0 0 5px rgba(0, 0, 0, 0.5);
+}
+#pass-login {
+    margin-top: 40px;
+}
+#pass-login li{
+    margin-top: 10px;
+}
+#pass-login label{
+    display: inline-block;
+    width: 80px;
+    font: 15px sans-serif;
+    margin-left: 10px;
+    margin-top: 4px;
+}
+#pass-login input{
+    width: 200px;
+    font: 17px sans-serif;
+    background: #fff;
+    border: 1px solid #c3c3c3;
+}
+#submit_enter{
+    margin-right: 5px;
+    margin-top: 25px;
+    width: 70px;
+    height: 30px;
+}
+#msgerror{
+    display: inline-block;
+    width: 100%;
+    height: 30px;
+    font: bold 16px sans-serif;
+    text-align: center;
+    padding: 10px 0 0 0;
+    color: black;
+    background: #ffb4b4;
+}
+
+
